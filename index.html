@@ -5,38 +5,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>我的个人作品集</title>
     <style>
-        body { font-family: sans-serif; line-height: 1.6; margin: 40px; background-color: #f4f4f4; color: #333; }
-        .container { max-width: 800px; margin: auto; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-        h1, h2 { color: #0366d6; }
-        .project { border-bottom: 1px solid #eee; padding-bottom: 15px; margin-bottom: 15px; }
+            body {
+                font-family: 'Segoe UI', 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+                line-height: 1.8;
+                margin: 0;
+                background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+                color: #222;
+            }
+            .container {
+                max-width: 900px;
+                margin: 40px auto;
+                background: #fff;
+                padding: 32px 28px;
+                border-radius: 16px;
+                box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+            }
+            header {
+                text-align: center;
+                margin-bottom: 32px;
+            }
+            h1 {
+                color: #0366d6;
+                font-size: 2.6em;
+                margin-bottom: 0.2em;
+            }
+            h2 {
+                color: #2188ff;
+                font-size: 1.6em;
+                margin-top: 2em;
+            }
+            .intro {
+                font-size: 1.2em;
+                color: #555;
+                margin-bottom: 0.5em;
+            }
+            .interests {
+                font-size: 1.1em;
+                color: #3a3a3a;
+                margin-bottom: 1.5em;
+            }
+            .project {
+                border-bottom: 1px solid #e3e3e3;
+                padding-bottom: 18px;
+                margin-bottom: 18px;
+                transition: box-shadow 0.2s;
+                border-radius: 8px;
+            }
+            .project:hover {
+                box-shadow: 0 2px 12px rgba(33,136,255,0.08);
+            }
+            .project h3 {
+                color: #0366d6;
+                margin-bottom: 0.3em;
+            }
+            .project p {
+                color: #444;
+            }
+            .project a {
+                color: #2188ff;
+                text-decoration: none;
+                font-weight: 500;
+                border-bottom: 1px dotted #2188ff;
+                transition: color 0.2s;
+            }
+            .project a:hover {
+                color: #0056b3;
+                border-bottom: 1px solid #0056b3;
+            }
+            footer {
+                text-align: center;
+                margin-top: 40px;
+                color: #888;
+                font-size: 1em;
+            }
+            .contact-links a {
+                color: #0366d6;
+                text-decoration: none;
+                margin: 0 8px;
+                font-weight: 500;
+            }
+            .contact-links a:hover {
+                text-decoration: underline;
+            }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>你好，我是 [你的名字]</h1>
-            <p>[简单介绍一下你自己，比如：一名前端开发者，热衷于构建美观且实用的网页应用。]</p>
+              <h1>你好，我是严涛 (Tao Yan)</h1>
+              <div class="intro">在读研究生，热爱碳计算与海洋科学。</div>
+              <div class="interests">兴趣方向：碳计算、海洋科学、数据分析与可视化。</div>
         </header>
 
         <section id="projects">
             <h2>我的项目</h2>
 
-            <div class="project">
-                <h3>项目一：[你的项目名称]</h3>
-                <p>[这里是关于这个项目的简短描述，说明它的功能、你使用的技术等。]</p>
-                <a href="[项目链接，可以是GitHub仓库或演示地址]" target="_blank">查看项目</a>
-            </div>
+                <div class="project">
+                    <h3>碳足迹计算工具</h3>
+                    <p>一个用于个人或企业碳排放量计算的网页应用，支持数据可视化与报告导出。技术栈：JavaScript, Chart.js, HTML5。</p>
+                    <a href="https://github.com/Nikeandocean/carbon-calculator" target="_blank">GitHub 仓库</a>
+                </div>
 
-            <div class="project">
-                <h3>项目二：[你的项目名称]</h3>
-                <p>[这里是关于这个项目的简短描述。]</p>
-                <a href="[项目链接]" target="_blank">查看项目</a>
-            </div>
+                <div class="project">
+                    <h3>海洋数据分析平台</h3>
+                    <p>整合多源海洋环境数据，支持交互式分析与地图展示。技术栈：Python, Flask, Leaflet.js。</p>
+                    <a href="https://github.com/Nikeandocean/ocean-data-platform" target="_blank">GitHub 仓库</a>
+                </div>
 
         </section>
 
         <footer>
-            <p>联系我：[你的邮箱地址] | <a href="[https://github.com/](https://github.com/)[你的GitHub用户名]">我的 GitHub</a></p>
+              <div class="contact-links">
+                 联系我：<a href="mailto:nikeandocean@gmail.com">nikeandocean@gmail.com</a> |
+                 <a href="https://github.com/Nikeandocean" target="_blank">我的 GitHub</a>
+              </div>
         </footer>
     </div>
 </body>
